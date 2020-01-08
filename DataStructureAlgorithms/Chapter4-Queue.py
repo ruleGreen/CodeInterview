@@ -69,8 +69,7 @@ class CircularQueue(object):
         if self.head == self.tail:
             return False
         res = self.queue[self.head]
-        if __name__ == '__main__':
-            self.head = (self.head + 1) % self.n   # update formula
+        self.head = (self.head + 1) % self.n   # update formula
         return res
 
 

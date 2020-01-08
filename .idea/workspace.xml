@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="578741c8-624b-4110-ac2d-a89e4546bb63" name="Default Changelist" comment="" />
+    <list default="true" id="578741c8-624b-4110-ac2d-a89e4546bb63" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DataStructureAlgorithms/Chapter10-RedBlackTree.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DataStructureAlgorithms/Chapter9-BinaryTree.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/CodeInterview.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CodeInterview.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructureAlgorithms/Chapter-Tree.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructureAlgorithms/Chapter0-Basic.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructureAlgorithms/Chapter0-Basic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructureAlgorithms/Chapter2-LinkedList.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructureAlgorithms/Chapter2-LinkedList.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructureAlgorithms/Chapter4-Queue.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructureAlgorithms/Chapter4-Queue.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructureAlgorithms/Chapter8-HashTable.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructureAlgorithms/Chapter8-HashTable.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Google/Q2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Google/Q2(DP).py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,13 +29,19 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1RsK0P7MfmSAfsxhKpaLZ5dXhAo" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$USER_HOME$/Documents/myProject/NLP/pyhanlp/Chapter2" />
       <recent name="$PROJECT_DIR$/Others/shengce" />
       <recent name="$PROJECT_DIR$/ByteDance/2018Spring" />
       <recent name="$PROJECT_DIR$/Tencent/2018_spring" />
@@ -41,8 +60,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Chapter8-HashTable">
-    <configuration name="Chapter-String" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.Chapter0-Basic">
+    <configuration name="Chapter-Permutation and Combination" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="CodeInterview" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -54,7 +73,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DataStructureAlgorithms/Chapter-String.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DataStructureAlgorithms/Chapter-Permutation and Combination.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -63,7 +82,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Chapter-Tree" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Chapter0-Basic" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="CodeInterview" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -75,7 +94,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DataStructureAlgorithms/Chapter-Tree.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DataStructureAlgorithms/Chapter0-Basic.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -84,19 +103,19 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Chapter6-BinarySearch" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="CodeInterview" />
+    <configuration name="index" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ResearchAssistant" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DataStructureAlgorithms" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Documents/myProject/ResearchAssistant/ChineseGrammaticalErrorCorr/WikiPedia" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DataStructureAlgorithms/Chapter6-BinarySearch.py" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/Documents/myProject/ResearchAssistant/ChineseGrammaticalErrorCorr/WikiPedia/index.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -105,19 +124,19 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Chapter8-HashTable" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="CodeInterview" />
+    <configuration name="process" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ResearchAssistant" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DataStructureAlgorithms" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Documents/myProject/ResearchAssistant/ChineseGrammaticalErrorCorr/Traditional2Simple" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DataStructureAlgorithms/Chapter8-HashTable.py" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/Documents/myProject/ResearchAssistant/ChineseGrammaticalErrorCorr/Traditional2Simple/process.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -126,7 +145,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Q1 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="CodeInterview" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -134,26 +153,41 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tencent/Internship" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tencent/Internship/Q1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <module name="CUHK" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Chapter8-HashTable" />
-        <item itemvalue="Python.Chapter-String" />
-        <item itemvalue="Python.Q1 (1)" />
-        <item itemvalue="Python.Chapter-Tree" />
-        <item itemvalue="Python.Chapter6-BinarySearch" />
+        <item itemvalue="Python.Chapter0-Basic" />
+        <item itemvalue="Python.process" />
+        <item itemvalue="Python.index" />
+        <item itemvalue="Python.Chapter-Permutation and Combination" />
+        <item itemvalue="Python.test" />
       </list>
     </recent_temporary>
   </component>
@@ -169,5 +203,18 @@
       <updated>1570450139517</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

@@ -74,7 +74,7 @@ class Solution:
     """
     def hasCycle(self, head):
         fast = slow = head
-        while slow and fast and fast.next:
+        while fast and fast.next:
             slow = slow.next
             fast = fast.next.next
             if slow is fast:
@@ -82,10 +82,73 @@ class Solution:
         return False
 
     # 两个有序的链表合并
+    def merge_sorted_list(self, l1, l2):
+        if l1 and l2:
+            p1, p2 = l1, l2
+            fake_head = ListNode(None)   # dummy head node
+            current = fake_head
+            while p1 and p2:
+                if p1.data < p2.data:
+                    current.next = p1
+                    p1 = p1.next
+                else:
+                    current.next = p2
+                    p2 = p2.next
+                current = current.next
+            current.next = p1 if p1 else p2
+            return fake_head.next
+        return l1 or l2
 
-    # 删除链表倒数第 n 个结点
+    # 删除链表倒数第 n 个结点, 假设n大于0
+    def remove_nth_from_end(self, head, n):
+        fast = head
+        count = 0
+        while fast and count < n:
+            fast = fast.next
+            count += 1
+        if not fast and count < n:  # not that many nodes
+            return head
+        if not fast and count == n:
+            return head.next
+
+        slow = head
+        while fast.next:
+            fast, slow = fast.next, slow.next
+        slow.next = slow.next.next
+        return head
 
     # 求链表的中间结点
+    def find_middle_node(self, head):
+        slow, fast = head, head
+        fast = fast.next if fast else None
+        while fast and fast.next:
+            slow = slow.next
+            fast = fast.next.next
+        return slow
+
+    # 求链表中环的入口位置
+    def cycle_start(self, head):
+        fast, slow = head, head
+
+        while fast and fast.next:
+            fast = fast.next.next
+            slow = slow.next
+            if fast == slow:
+                meet = slow
+                break       # 证明有环存在
+
+        if not fast or fast.next is None:
+            return None
+
+        new, pos = head, 0
+        while new and meet:
+            if new == meet:
+                return meet
+
+            new = new.next
+            meet = meet.next
+
+            pos += 1
 
     # 翻转链表中相邻的两个节点 leetcode 24
     def swapListNode(self, head: ListNode) -> ListNode:
@@ -97,7 +160,6 @@ class Solution:
             # a,b,b.next = b,b.next,a # a,b are temporary variables
             pre.next, a.next, b.next = b, b.next, a
             pre = a
-        return self.next
 
         """
         pHead = ListNode(None)
@@ -108,11 +170,27 @@ class Solution:
             # a,b,b.next = b,b.next,a # a,b are temporary variables
             pre.next, a.next, b.next = b, b.next, a
             pre = a
-            
         return pHead.next
-    
         """
 
+        return self.next
+
+    def lenList(self, root):
+        if root is None: return 0
+        length = 0
+        while root is not None:
+            length += 1
+            root = root.next
+        return length
+
+    def sortedList(self, root):
+        if root is None: return
+        for i in range(self.lenList(root)):
+            p = root
+            for j in range(0, self.lenList(root) + i - 1):
+                if p.data > p.next.data:
+                    p.data, p.next.data = p.next.data, p.data
+                p = p.next
 
 """
 =================================================================

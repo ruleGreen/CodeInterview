@@ -104,3 +104,42 @@ class Solution:
         for i in range(2, len(self.numbers)):
             opt[i] = max(self.numbers[i], max(opt[i - 2] + self.numbers[i], opt[i - 1]))
         return opt[len(self.numbers) - 1]
+
+
+    """
+    Leetcode Weekly Contest 5306: Minimum Insertion Steps to Make a String Palindrome
+    Example 1:
+    Input: s = "zzazz"
+    Output: 0
+    Explanation: The string "zzazz" is already palindrome we don't need any insertions.
+    
+    Example 2:
+    Input: s = "leetcode"
+    Output: 5
+    Explanation: Inserting 5 characters the string becomes "leetcodocteel".
+    """
+
+    def minInsertions(self, str1):
+        """
+        :type s: str
+        :rtype: int
+        """
+        n = len(str1)
+        table = [[0 for i in range(n)]
+                 for i in range(n)]
+        l, h, gap = 0, 0, 0
+
+        # Fill the table
+        for gap in range(1, n):
+            l = 0
+            for h in range(gap, n):
+                if str1[l] == str1[h]:
+                    table[l][h] = table[l + 1][h - 1]
+                else:
+                    table[l][h] = (min(table[l][h - 1],
+                                       table[l + 1][h]) + 1)
+                l += 1
+
+        # Return minimum number of insertions
+        # for str1[0..n-1]
+        return table[0][n - 1]
