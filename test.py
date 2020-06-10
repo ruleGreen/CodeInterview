@@ -1,20 +1,30 @@
-x = [0, 1, 2, 3, 4, 5, 6]
+class Solution:
+    def minTaps(self, n: int, ranges) -> int:
 
-res_h1, res_h2, res_h3 = [], [], []
-for i in range(0, len(x)):
-    h1 = 2 * x[i] + 1 % 11
-    h2 = 3 * x[i] + 2 % 10
-    h3 = 5 * x[i] + 2 % 6
-    res_h1.append(h1)
-    res_h2.append(h2)
-    res_h3.append(h3)
+        cands = []
+        for i in range(len(ranges)):
+            cands.append([i - ranges[i], i + ranges[i]])
+        cands = sorted(cands, key=lambda x: (x[0], x[1]))
 
-print(res_h1, res_h2, res_h3)
+        print(cands)
+        start = 0
+        res = 0
 
+        if cands[0][0] > 0 or cands[-1][1] < n:
+            return -1
+        while start < len(cands) - 1:
+            print(start)
+            if cands[start][1] < cands[start + 1][0]:
+                return -1
+            elif cands[start + 1][0] == cands[start][0]:
+                start += 1
+            elif cands[start + 1][0] > cands[start][1]:
+                res += 1
+                start += 1
+        return res
 
-res_h1 = [res_h1[i] % 7 for i in range(len(res_h1))]
-res_h2 = [res_h2[i] % 7 for i in range(len(res_h2))]
-res_h3 = [res_h3[i] % 7 for i in range(len(res_h3))]
-
-print("AFTER MOD N:")
-print(res_h1, res_h2, res_h3)
+if __name__ == "__main__":
+    n = 5
+    ranges = [3,4,1,1,0,0]
+    sol = Solution()
+    sol.minTaps(n, ranges)

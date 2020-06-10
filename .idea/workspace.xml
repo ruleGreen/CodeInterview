@@ -2,18 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="578741c8-624b-4110-ac2d-a89e4546bb63" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataStructureAlgorithms/Chapter10-RedBlackTree.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataStructureAlgorithms/Chapter9-BinaryTree.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/CodeInterview.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CodeInterview.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataStructureAlgorithms/Chapter-Tree.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructureAlgorithms/Chapter-DP.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructureAlgorithms/Chapter-DP.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataStructureAlgorithms/Chapter0-Basic.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructureAlgorithms/Chapter0-Basic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructureAlgorithms/Chapter1-Array.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructureAlgorithms/Chapter1-Array.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructureAlgorithms/Chapter11-Heap.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructureAlgorithms/Chapter11-Heap.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataStructureAlgorithms/Chapter2-LinkedList.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructureAlgorithms/Chapter2-LinkedList.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataStructureAlgorithms/Chapter4-Queue.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructureAlgorithms/Chapter4-Queue.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataStructureAlgorithms/Chapter8-HashTable.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructureAlgorithms/Chapter8-HashTable.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Google/Q2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Google/Q2(DP).py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructureAlgorithms/Chapter9-BinaryTree.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructureAlgorithms/Chapter9-BinaryTree.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Google/Q2(DP).py" beforeDir="false" afterPath="$PROJECT_DIR$/Google/Q2(DP).py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,16 +35,22 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Documents/myProject/TreeLSTM/data/glove" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Others/CodeTeching/Q20" />
+      <recent name="$PROJECT_DIR$/Others/CodeTeching/Q18" />
+      <recent name="$PROJECT_DIR$/Others" />
+      <recent name="$USER_HOME$/Documents/myProject/TreeLSTM/data/taskA" />
       <recent name="$USER_HOME$/Documents/myProject/NLP/pyhanlp/Chapter2" />
-      <recent name="$PROJECT_DIR$/Others/shengce" />
-      <recent name="$PROJECT_DIR$/ByteDance/2018Spring" />
-      <recent name="$PROJECT_DIR$/Tencent/2018_spring" />
-      <recent name="$PROJECT_DIR$/Tencent" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$USER_HOME$/Documents/myProject/TreeLSTM/data/glove" />
+      <recent name="$USER_HOME$/Documents/myProject/TreeLSTM/data/taskA" />
+      <recent name="$USER_HOME$/Documents/myProject/TreeLSTM/data" />
+      <recent name="$USER_HOME$/Documents/myProject/TreeLSTM/lib" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -60,8 +65,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Chapter0-Basic">
-    <configuration name="Chapter-Permutation and Combination" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.main (1)">
+    <configuration name="game" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="CodeInterview" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -69,11 +74,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DataStructureAlgorithms" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/CodingTeaching/BasicPython/Pygame/game" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DataStructureAlgorithms/Chapter-Permutation and Combination.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CodingTeaching/BasicPython/Pygame/game/game.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -82,7 +87,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Chapter0-Basic" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="CodeInterview" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -90,11 +95,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DataStructureAlgorithms" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/CodingTeaching/BasicPython/Pygame" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DataStructureAlgorithms/Chapter0-Basic.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CodingTeaching/BasicPython/Pygame/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -103,19 +108,19 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="index" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="ResearchAssistant" />
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="CodeInterview" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Documents/myProject/ResearchAssistant/ChineseGrammaticalErrorCorr/WikiPedia" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/CodingTeaching/BasicPython/Turtle" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$USER_HOME$/Documents/myProject/ResearchAssistant/ChineseGrammaticalErrorCorr/WikiPedia/index.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CodingTeaching/BasicPython/Turtle/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -124,19 +129,19 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="process" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="ResearchAssistant" />
+    <configuration name="teaching" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="CodeInterview" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Documents/myProject/ResearchAssistant/ChineseGrammaticalErrorCorr/Traditional2Simple" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/CodingTeaching/BasicPython/Turtle" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$USER_HOME$/Documents/myProject/ResearchAssistant/ChineseGrammaticalErrorCorr/Traditional2Simple/process.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CodingTeaching/BasicPython/Turtle/teaching.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -153,11 +158,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/CodingTeaching/BasicPython/Turtle" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CodingTeaching/BasicPython/Turtle/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -183,11 +188,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Chapter0-Basic" />
-        <item itemvalue="Python.process" />
-        <item itemvalue="Python.index" />
-        <item itemvalue="Python.Chapter-Permutation and Combination" />
+        <item itemvalue="Python.main (1)" />
+        <item itemvalue="Python.game" />
+        <item itemvalue="Python.teaching" />
         <item itemvalue="Python.test" />
+        <item itemvalue="Python.main" />
       </list>
     </recent_temporary>
   </component>

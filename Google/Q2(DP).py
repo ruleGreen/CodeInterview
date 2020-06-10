@@ -32,7 +32,7 @@ class Solution:
             # 第二种情况 当前所需要的人数大于上个月的
             if needed[month] > needed[month-1]:
                 for person in range(needed[month] - min_needed, max_needed - min_needed + 1):
-                    cost[month-1][person] +
+                    # cost[month-1][person] +
                     cost[month][person] = min(cost[month][person], )
 
         return

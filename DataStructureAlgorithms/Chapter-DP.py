@@ -105,6 +105,12 @@ class Solution:
             opt[i] = max(self.numbers[i], max(opt[i - 2] + self.numbers[i], opt[i - 1]))
         return opt[len(self.numbers) - 1]
 
+    def chooseMaxV3(self):
+        return
+
+    # leetcode 1320. Minimum Distance to Type a Word Using Two Fingers
+    # this is very important!!!
+
 
     """
     Leetcode Weekly Contest 5306: Minimum Insertion Steps to Make a String Palindrome
@@ -143,3 +149,9 @@ class Solution:
         # Return minimum number of insertions
         # for str1[0..n-1]
         return table[0][n - 1]
+
+if __name__ == "__main__":
+    numbers = [1,2,3,-1,-3,5,6,7,8,-9]
+    sol = Solution(numbers)
+
+    # 给定一个整数数组[a1,a2,.....aN] ，N个数,  现在从里面选择若干数使得他们的和最大，同时满足相邻两数不能同时被选， a1和aN首尾两个也认为是相邻的。

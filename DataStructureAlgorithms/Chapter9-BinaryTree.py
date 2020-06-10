@@ -172,7 +172,7 @@ class BinaryTree(object):
         3. 二叉树中的节点的个数 第k层节点的个数
     """
 
-    # 二叉树的最大深度
+    # 二叉树的最大深度    二叉树两个节点的最大距离
     def maxDepth(self, root):
         if not root: return 0
         left = self.maxDepth(root.left)
@@ -227,6 +227,15 @@ class BinaryTree(object):
 
     def isBalanced(self, node):
         return self.maxDepth(node) != -1
+
+    # 5* 给定一个数组构建一个平衡二叉树
+    def buildBalancedTree(self, cands):
+        if not cands:
+            return
+        result = TreeNode(cands[len(cands) // 2])
+        result.left = self.buildBalancedTree(cands[:len(cands) // 2])
+        result.right = self.buildBalancedTree(cands[len(cands) // 2 + 1:])
+        return result
 
     # 6. 判断二叉树是否是完全二叉树
     def isCompleteTreeNode(self, root):
@@ -293,11 +302,125 @@ class BinaryTree(object):
         return found
 
     def getLastCommonParent(self, root, t1, t2):
-        return
+        if self.findNode(root.left, t1):
+            if self.findNode(root.right, t2):
+                return root
+            else:
+                return self.getLastCommonParent(root.left, t1, t2)
+        else:
+            if self.findNode(root.left, t2):
+                return root
+            else:
+                return self.getLastCommonParent(root.right, t1, t2)
+
+    # better-10
+    def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
+        # brute force: 判断p 和 q是否在root的左右两边
+        if root is None: return
+        if root.val == p.val or root.val == q.val:
+            return root
+        
+        left = self.lowestCommonAncestor(root.left, p, q) 
+        right = self.lowestCommonAncestor(root.right, p, q)
+        
+        if left and right:
+            return root
+        elif left:
+            return left
+        return right
+
+    # special-10: 求二叉搜索树中两个节点的最低公共祖先节点
+    def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
+        if q.val < p.val:
+            p, q = q, p
+        if root is None:
+            return None
+        if root.val >= p.val and root.val <= q.val:
+            return root
+        return self.helper(root, p, q)
+
+    def helper(self, root, p, q):
+        assert (q.val > p.val)
+        if root.val >= p.val and root.val <= q.val:
+            return root
+        elif root.val > q.val:
+            return self.helper(root.left, p, q)
+        elif root.val < p.val:
+            return self.helper(root.right, p, q)
 
     # 11. 二叉树中插入节点
+    def insertNode(self, root, node):
+        if root == node: return node
+        tmp = root, last = None
+        # find the position of inserted node
+        while tmp:
+            last = tmp
+            if tmp.val > node.val:
+                tmp = tmp.left
+            else:
+                tmp = tmp.right
+        if last:
+            if last.val > node.val:
+                last.left = node
+            else:
+                last.right = node
+        return node
 
-    # 12.
+    # 12. 验证一个树是否为二叉搜索树
+    def isValidBST1(self, root):
+        def helper(node, lower, upper):
+            if not node: return True
+            if node.val <= lower and node.val >= upper:
+                return False
+            return helper(node.left, lower, node.val) and helper(node.right, node.val, upper)
+        return helper(root, float("-inf"), float("inf"))
+
+    def isValidBST2(self, root: TreeNode) -> bool:
+        if not root:
+            return True
+
+        stack = [(root, float("-inf"), float("inf"))]
+        while stack:
+            node, lower, upper = stack.pop()
+            if not node:
+                continue
+            if node.val <= lower or node.val >= upper:
+                return False
+            stack.append((node.left, lower, node.val))
+            stack.append((node.right, node.val, upper))
+        return True
+
+    # 利用中序遍历的思想，每次仅保存前一个值,然后与当前值进行对比
+    def isValidBST3(self, root: TreeNode) -> bool:
+        self.prev = None
+        return self.helper(root)
+
+    def helper(self, root):
+        if root is None: return True
+        if not self.helper(root.left):
+            return False
+        if self.prev is not None and root.val <= self.prev:
+            return False
+        self.prev = root.val
+        return self.helper(root.right)
+
+    # 13. 二叉树的搜索空间
+    # 给定k1 k2两个值(k1 < k2)，找到树中所有值在k1 与 k2 之间的节点
+    # important !!!  这不一定是对的
+    def searchHelper(self, root, k1, k2):
+        if not root: return None
+        if root.val > k1: self.searchHelper(root.left, k1, k2)
+        if root.val >= k1 and root.val <= k2: self.result.append(root.val)
+        if root.val < k2: self.searchHelper(root.right, k1, k2)
+
+    def searchRange(self, root, k1, k2):
+        self.result = []
+        self.searchHelper(root, k1, k2)
+        return self.result
+
+    # 14. path 从根节点到叶子节点的路径上的点
+
+
 
 # 二叉查找树
 class BinarySearchTree:
@@ -413,6 +536,10 @@ if __name__ == "__main__":
 
     # 3. 二叉树中节点的个数
     print("The number of nodes: ", sol.numofNodes(root))
+
+    # 4. 二叉树k1 k2
+    sol.searchRange(root, 3, 20)
+    print("The search range of k1 and k2:", sol.result)
 
     print("============================================================")
 

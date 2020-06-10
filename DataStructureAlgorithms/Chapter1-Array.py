@@ -1,6 +1,8 @@
 # 22 November 2019
 # author: Wang Hongru
 
+import bisect
+
 """
 数组是适合查找操作，但是查找的时间复杂度并不为 O(1)。
 即便是排好序的数组，你用二分查找，时间复杂度也是 O(logn)。
@@ -10,13 +12,19 @@
 array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 print(array.index(4))  # index(element) get the index of element
 print(array.pop(1))    # pop(index) delete the element at the position of index
+print(array.remove(4))  # remove element
 print("Before delete the element", array)
 del array[0]           # delete the element according to index
 print("After delete the element", array)
 
+# bisect the array
+h = []
+bisect.insort(h, 3)
+bisect.insort(h, 6)
+print(h)
 
 # 下面这两种方法都没有改变array的内存位置，在使用递归代码去做 res.append(array)的时候要注意，就会报错
-array = array.sort()
+array.sort()
 array.sort()
 # 下面这个可以
 array = sorted(array)
@@ -66,6 +74,7 @@ class Solution:
             memo.append(value)
             if target - value >= 0:        # 减少搜索空间
                 self.dfs(cands, target - value, memo)
+            # 恢复递归前 上下文
             memo.pop(-1)
             cands.insert(i, value)
             

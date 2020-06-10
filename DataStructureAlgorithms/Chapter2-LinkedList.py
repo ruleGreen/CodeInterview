@@ -149,6 +149,7 @@ class Solution:
             meet = meet.next
 
             pos += 1
+        return pos
 
     # 翻转链表中相邻的两个节点 leetcode 24
     def swapListNode(self, head: ListNode) -> ListNode:
@@ -191,6 +192,40 @@ class Solution:
                 if p.data > p.next.data:
                     p.data, p.next.data = p.next.data, p.data
                 p = p.next
+
+    # 在O(nlogn)的时间复杂度下排序单链表
+    def mergeTwoLists(self, l1, l2):
+        dummy = h = ListNode(0)
+        while l1 and l2:
+            if l1.value < l2.value:
+                h.next = l1
+                l1 = l1.next
+            else:
+                h.next = l2
+                l2 = l2.next
+            h = h.next
+        h.next = l1 or l2
+        return dummy.next
+
+    def sortList(self, head):
+        """
+        :type head: ListNode
+        :rtype: ListNode
+        """
+
+        if not head or not head.next:
+            return head
+
+        pre = slow = fast = head
+        while fast and fast.next:
+            pre = slow
+            slow = slow.next
+            fast = fast.next.next
+        pre.next = None
+
+        l1 = self.sortList(head)
+        l2 = self.sortList(slow)
+        return self.mergeTwoLists(l1, l2)
 
 """
 =================================================================
